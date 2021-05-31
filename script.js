@@ -15,7 +15,10 @@ for (let i = 0; i < mapString.length; i++) {
 // 2) function for traversing the map with slope right 3, down 1. function takes the nested map array and starting index
 
 const countTrees = function (arr, startIndex) {
-  let index = startIndex;
+  // modulo 11 for index>11
+  //   0, 1, 2, ..., 10, 0, 1, 2,...
+
+  let index = startIndex % 11;
   let treeArray = [];
 
   for (let row = 0; row < arr.length; row++) {
@@ -29,6 +32,6 @@ const countTrees = function (arr, startIndex) {
   }
   return treeArray;
 };
-
 console.log(countTrees(mapArr, 0));
-// 3) -> ["O", "X", "O", "X", "X", "O", "X", "X", "X", "X"]
+// 3) returns ["O", "X", "O", "X", "X", "O", "X", "X", "X", "X"]
+console.log(countTrees(mapArr, 11)); // returns same as above
