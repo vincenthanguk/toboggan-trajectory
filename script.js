@@ -24,11 +24,11 @@ for (let i = 0; i < mapString.length; i++) {
 //   '.#..#...#.#'.split(''),
 // ];
 
-const countTrees = function (arr, startRow, startIndex) {
+const countTrees = function (arr, startIndex) {
   let index = startIndex;
   let treeArray = [];
 
-  for (let row = startRow; row < arr.length; row++) {
+  for (let row = 0; row < arr.length; row++) {
     if (row === 0) row++;
     index = index + 3;
     if (index > 10) index = index - arr[row].length;
@@ -37,4 +37,4 @@ const countTrees = function (arr, startRow, startIndex) {
   return treeArray;
 };
 
-console.log(countTrees(mapArr, 0, 0));
+console.log(countTrees(mapArr, 0));
