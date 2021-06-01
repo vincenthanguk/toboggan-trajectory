@@ -56,9 +56,9 @@ const countTreesAdjustable = function (arr, startIndex, right, down) {
   let trees = 0;
 
   for (let row = 0; row < arr.length; row = row + down) {
-    //   only add 1 in first map[0]
+    //   skip first row
     if (row === 0) row = row + down;
-    // increment index by 3
+    // increment index by 'right'
     index = index + right;
     // console.log(row, index);
     if (index >= arr[row].length) index = index - arr[row].length;
