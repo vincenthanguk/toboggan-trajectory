@@ -1,0 +1,23 @@
+{
+  "name": "toboggan-trajectory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincenthanguk/toboggan-trajectory.git"
+  },
+  "keywords": [
+    "coding",
+    "challenge"
+  ],
+  "author": "vincent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincenthanguk/toboggan-trajectory/issues"
+  },
+  "homepage": "https://github.com/vincenthanguk/toboggan-trajectory#readme"
+}
